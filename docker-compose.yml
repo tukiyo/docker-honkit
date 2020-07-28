@@ -2,7 +2,7 @@ web:
   image: tukiyo3/honkit
   restart: always
   volumes:
-    - ./honkit:/srv/html
+    - ./honkit:/srv/honkit
     - ./html:/srv/html
   ports:
     - "4000:4000"
