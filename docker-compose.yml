@@ -3,7 +3,5 @@ web:
   restart: always
   volumes:
     - ./honkit:/srv/honkit
-    - ./html:/srv/html
   ports:
     - "4000:4000"
-    - "35729:35729"
