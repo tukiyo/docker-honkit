@@ -10,4 +10,4 @@ WORKDIR /srv/honkit
 VOLUME /srv/honkit
 EXPOSE 4000
 
-CMD honkit serve || (honkit init && chmod +w *.md && honkit serve)
+CMD honkit serve || (honkit init && chmod -R +w /srv/honkit && honkit serve)
