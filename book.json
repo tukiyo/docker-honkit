@@ -1,0 +1,6 @@
+{
+    "plugins": [
+	"search-pro-fixed", "-lunr", "-search", 
+    ],
+    "language": "ja"
+}

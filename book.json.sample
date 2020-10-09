@@ -1,4 +1,0 @@
-{
-    "plugins": [ "-lunr", "-search", "search-pro-kui" ],
-    "language": "ja"
-}
