@@ -21,8 +21,12 @@ RUN npm i -g gitbook-plugin-search-pro-fixed
 
 # PDF出力の日本語フォント設定 (これがないと日本語表示不可)
 ENV LANG ja_JP.UTF-8
-COPY dockerfile/files/fonts.conf /root/.config/fontconfig/
-COPY dockerfile/files/ipag.ttc /root/.local/share/fonts/
+# 07やさしさアンチック
+COPY dockerfile/07YasashisaAntique/fonts.conf /root/.config/fontconfig/
+COPY dockerfile/07YasashisaAntique/07YasashisaAntique.ttf /root/.local/share/fonts/
+# IPAゴシック
+#COPY dockerfile/ipag/fonts.conf /root/.config/fontconfig/
+#COPY dockerfile/ipag/ipag.ttc /root/.local/share/fonts/
 
 WORKDIR /srv/honkit
 VOLUME /srv/honkit
