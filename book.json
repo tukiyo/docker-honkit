@@ -1,6 +1,11 @@
 {
     "plugins": [
 	"search-pro-fixed", "-lunr", "-search"
+	, "hide-published-with"
+	, "anchors"
+	, "navigator"
+	, "collapsible-chapters"
+	, "hints"
     ],
     "language": "ja"
 }
